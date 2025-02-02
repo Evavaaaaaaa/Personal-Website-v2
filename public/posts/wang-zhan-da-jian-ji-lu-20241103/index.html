@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible"
+      content="IE=edge">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+<meta name="description"
+      content="An elegant and understated blog" />
+<meta name="keywords"
+      content="blog, YiHua Chan, 詹倚華, 詹倚華的部落格" /> 
+
+<title>
+  网站搭建记录2024.11.03 // YiHua Chan</title>
+<meta
+  property="og:title"
+  content="YiHua Chan | 网站搭建记录2024.11.03"
+/>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://chanyihua.com/posts/wang-zhan-da-jian-ji-lu-20241103/" />
+<meta property="og:description" content="总之记录一下" />
+
+
+<link rel="alternate"
+          type="application/rss+xml"
+          title="YiHua Chan"
+          href="https://chanyihua.com/atom.xml">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+<!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">  -->
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap&family=Playfair+Display"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://chanyihua.com/base.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
+            integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g=="
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+    <div class="top">
+        <div class="avatar">
+			<a href="/">
+                <img alt="YiHua Chan" title="YiHua Chan" src="https://chanyihua.com/processed_images/R.3e3529ce58a669b5.jpg" srcset="https://chanyihua.com/processed_images/R.f26cb1f8d52fad72.jpg 64w, https://chanyihua.com/processed_images/R.3e3529ce58a669b5.jpg 128w, https://chanyihua.com/processed_images/R.9459c9dd7688fd63.jpg 256w" class="" />
+
+			</a>
+		</div>
+	    <div class="details">
+            <a class="site-name"
+            href="/">
+                <h1>YiHua Chan</h1>
+            </a>
+            <div class="site-description">
+                <p>An elegant and understated blog</p>
+            </div>
+        </div>
+    
+        </div>
+        <nav>
+            <div class="links"> 
+            <a 
+                href="https://chanyihua.com/ " alt="About"><span class="name">About</span></a> 
+            <a 
+                href="https://chanyihua.com/posts/ " alt="Posts"><span class="name">Posts</span></a> 
+            <a 
+                href="https://chanyihua.com/gallery/ " alt="Gallery"><span class="name">Gallery</span></a> 
+            <a 
+                href="https://chanyihua.com/tags/ " alt="Tags"><span class="name">Tags</span></a> 
+            <a 
+                href="https://chanyihua.com/search/ " alt="Search"><span class="name">Search</span></a> 
+            </div>
+
+        </nav>
+    </header>
+    <article>
+    
+
+<section class="post">
+  <div class="post-header">
+    <div class="meta">
+      <div class="date">
+        <span class="day">03</span>
+        <span class="rest">Nov 24</span>
+      </div>
+    </div>
+
+    <div class="matter">
+      <h1 class="title">网站搭建记录2024.11.03 </h1>
+    </div>
+  </div>
+    
+  <article><h1 id="jin-tian-zuo-liao-shen-me">今天做了什么</h1>
+<ol>
+<li>在 /content/xxx.md 编辑，并推到 github，上传了自己累积在 notion 的草稿!</li>
+</ol>
+<h2 id="hao-shi-2hr">耗时：2hr</h2>
+<h1 id="xue-dao-liao-shen-me">学到了什么</h1>
+<ol>
+<li>zola 为什么会用那么多文件：
+templates/base.html 用 <a href="https://github.com/Keats/tera">Tera</a> 讲网站的主页应该长什么样。最开始先 import 一大堆其它写好 template functions 的 html &gt;&gt;&gt; 这是一种模块化，灵活度高。比如 base.html 里面有许多 '{%- block seo %}...{%- endblock seo %}' 告诉 zola 这两个 code 之间的内容是可以被替换掉的。换句话说，这个'block'类似一种占位（placeholder）。如果没有重写里面的定义，那么zola 会用原先默认的内容。如果要改变，那只需要另外建立一个 html，扩展这个基础模块（通常使用 '{% extends "base.html" %}' 或类似的命令）。</li>
+</ol>
+<h1 id="huan-xiang-zuo-shen-me">还想做什么</h1>
+<ol>
+<li>更换 logo! 这个可能是 hard code,需要上 templates/partials/header.html 把 file path 替换掉。但首先我得画一个 logo 出来 hmmm</li>
+<li>继续更新内容，把 abridge 原先的内容替换掉</li>
+<li>换掉语言。我想要网站的 base language 维持英文，但 blog post 的第一语言是中文，语言选项里面可以选英文。这可能有点麻烦，因为需要确认很多文件里的 language 设置一致（如：config, content文件命名, etc)</li>
+</ol>
+<h1 id="yi-wen">疑问</h1>
+<ol>
+<li>中文的 blog post 的网站链接会长得很难看（https://chanyihua.com/overview-zi-wo-cheng-chang-yu-zi-wo-wan-zheng-xing/）。可以把 link 里的名字改掉吗？</li>
+<li>现在 content.md 里的时间都是手动输入的，容易输入错误，可以把这个自动化吗？</li>
+<li>现在属于每做一次改动，就会 git push，这样和 batch 起来减少git push 次数相比，有什么优势和弊端？</li>
+</ol>
+<h2 id="priority">Priority</h2>
+<p>想先把内容都更新掉，再慢慢改格式和模板。Go go!</p>
+</article>
+
+  
+    
+  
+  <ul class="tags">
+    
+      <li><a href='https://chanyihua.com/tags/features'>Features</a></li>
+    
+      <li><a href='https://chanyihua.com/tags/build'>build</a></li>
+    
+  </ul>
+  
+  
+    
+</section>
+</article>
+    <footer>
+        <div class="social">
+            <ul> 
+                 
+                <li>
+                    <a href="https://github.com/jimmyff&#x2F;zola-inky"
+                       title="Github" rel="me"><i data-feather="github"></i></a>
+                </li>
+                 
+                 
+                 
+                 
+                
+                
+                
+                <li>
+                    <a href="https://chanyihua.com/atom.xml"
+                       title="YiHua Chan"><i data-feather="rss"></i></a>
+                </li>
+            </ul>
+        </div>
+        <p> © YiHua Chan 2025
+
+        
+        <br>Powered by <a target="_blank" href="https://getzola.org/">Zola</a>. Theme: <a target="_blank" href="https://github.com/jimmyff/zola-inky">Inky</a>.
+        </p>
+    </footer>
+    <script>
+        feather.replace();
+    </script> 
+    </body>
+</html>
