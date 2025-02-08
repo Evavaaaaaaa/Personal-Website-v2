@@ -4,4 +4,4 @@ template = "index.html"
 in_search_index = true
 +++
 
-Welcome!
+Welcome to my blog!gii
