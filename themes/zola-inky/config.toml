@@ -73,3 +73,9 @@ menu_links = [
     # { url = "https://github.com/jimmyff/zola-inky", name = "Github" },
     { url = "$BASE_URL/search/", name = "Search" },
 ]
+
+[taxonomies]
+tags = { templates = [
+    { name = "gallery", path = "gallery" },
+    { name = "single", path = "posts" }
+]}

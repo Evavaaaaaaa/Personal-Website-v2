@@ -1,0 +1,17 @@
+{% extends "gallery.html" %}
+
+{% block content %}
+<h1 class="title">Tag: {{ term.name }}</h1>
+
+<!-- Your gallery grid layout here -->
+<div class="gallery-grid">
+    {% for page in term.pages %}
+        {% if page.path is starting_with("/gallery/") %}
+            <!-- Gallery item -->
+            <div class="gallery-item">
+                <!-- Your gallery content -->
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock content %} 

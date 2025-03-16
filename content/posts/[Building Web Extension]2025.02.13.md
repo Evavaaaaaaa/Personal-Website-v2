@@ -1,6 +1,6 @@
 +++
-title = "[Building Web Extension]2025.02.13"
-description = "Recording what i did"
+title = "Building Web Extension[2025.02.13]"
+description = "Doing what I do"
 date = 2025-02-13T23:52:00+08:00
 draft = false
 

@@ -21,6 +21,8 @@ default_language = "en"
 #       {name = "authors"}, # Basic definition: no feed or pagination
 #     ]
 #
+
+
 taxonomies = [{ name = "tags", lang = "en", rss = true }]
 
 [markdown]
@@ -70,7 +72,7 @@ menu_links = [
     { url = "$BASE_URL/", name = "About" },
     { url = "$BASE_URL/posts/", name = "Posts" },
     { url = "$BASE_URL/gallery/", name = "Gallery" },
-    { url = "$BASE_URL/tags/", name = "Tags" },
-    # { url = "https://github.com/jimmyff/zola-inky", name = "Github" },
+    # { url = "$BASE_URL/tags/", name = "Tags" },
+    { url = "https://github.com/Evavaaaaaaa", name = "Github" },
     { url = "$BASE_URL/search/", name = "Search" },
 ]

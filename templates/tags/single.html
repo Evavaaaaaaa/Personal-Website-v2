@@ -1,0 +1,49 @@
+{% extends "posts.html" %}
+
+{% block content %}
+<h1 class="title">Tag: {{ term.name }}</h1>
+
+<div class="post-container">
+    <!-- Main content -->
+    <div class="post-content">
+        {% for year, posts in term.pages | group_by(attribute="year") %}
+        <ul class="posts flat">
+            <h2 class="archive-year">{{ year }}</h2>
+            {% for post in posts %}
+            <li class="post">
+                <div class="post-header">
+                    <div class="meta">
+                        <div class="date">
+                            <span class="day">{{ post.date | date(format="%d") }}</span>
+                            <span class="rest">{{ post.date | date(format="%b") }}</span>
+                        </div>
+                    </div>
+                    <div class="matter">
+                        <div class="title small">
+                            <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
+                            {% if post.draft %}<span class="draft">(Draft)</span>{% endif %}
+                        </div>
+                        {{ hooks::posts_below_title(page=post) }} 
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="post-sidebar">
+        <div class="tags-list">
+            <h3>Sort by Tag</h3>
+            {% set all_tags = get_taxonomy(kind="tags") %}
+            {% for tag in all_tags.items %}
+                <a href="{{ tag.permalink }}" class="tag-item">
+                    {{ tag.name }} 
+                    <span class="tag-count">({{ tag.pages | length }})</span>
+                </a>
+            {% endfor %}
+        </div>
+    </aside>
+</div>
+{% endblock content %} 
