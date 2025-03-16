@@ -1,0 +1,50 @@
+{% extends "base.html" %}  <!-- Inherits from base template -->
+{% block content %}       <!-- Starts the content block defined in base -->
+
+<section class="post">    <!-- Container for the entire post -->
+  <div class="post-header">  <!-- Post header section -->
+    <div class="meta">       <!-- Metadata container -->
+      <div class="date">     <!-- Date formatting -->
+        <span class="day">{{ page.date | date(format='%d')}}</span>      <!-- Day of month -->
+        <span class="rest">{{ page.date | date(format='%b %y')}}</span>  <!-- Month and year -->
+      </div>
+    </div>
+
+    <div class="matter">     <!-- Post title section -->
+      <h1 class="title">{{ page.title }} {% if page.draft %}<span class="draft">Draft</span>{% endif %}</h1>
+    </div>
+  </div>
+
+  {{ hooks::post_above_content(page=page) }}   <!-- Hook for content above post -->
+  <article>{{ page.content | safe }}</article>  <!-- Main post content -->
+
+  {{ hooks::post_below_content(page=page) }}   <!-- Hook for content below post -->
+
+  <!-- Navigation section to add -->
+  <nav class="post-navigation">
+    {% if page.lower %}    <!-- If there's an older post -->
+    <a href="{{ page.lower.permalink }}" class="prev-post">
+        <span class="nav-label">← Previous</span>
+        <span class="post-title">{{ page.lower.title }}</span>
+    </a>
+    {% endif %}
+
+    {% if page.higher %}   <!-- If there's a newer post -->
+    <a href="{{ page.higher.permalink }}" class="next-post">
+        <span class="nav-label">Next →</span>
+        <span class="post-title">{{ page.higher.title }}</span>
+    </a>
+    {% endif %}
+  </nav>
+
+  {% if page.taxonomies is containing ("tags") %}  <!-- If post has tags -->
+  <ul class="tags">
+    {% for tag in page.taxonomies["tags"] %}      <!-- Loop through tags -->
+      <li><a href='{{ config.base_url | safe }}/tags/{{ tag | slugify }}'>{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  
+  {{ hooks::post_below_tags(page=page) }}   <!-- Hook for content below tags -->
+</section>
+{% endblock content %}     <!-- Ends the content block -->
