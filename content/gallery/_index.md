@@ -3,7 +3,10 @@ title = "Eva's gallery"
 sort_by = "date"
 template = "gallery.html"
 page_template = "post.html"
+in_search_index=true
 +++
 
-Here is Eva's gallery. The gallery uses a responsive grid and responsive image sizes and is grouped by year.
-This gallery is a collection of Eva's photography, digital art, and other creative works.
+A trace of thoughts in lines and color — this gallery holds moments I couldn’t put into words.
+Some pieces are whispers, some are noise. Some I drew with care, some just… arrived.
+
+Thanks for being here, and for looking closely.

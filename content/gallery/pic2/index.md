@@ -1,13 +1,14 @@
 +++
-title = "Test2"
+title = "Scuba-diving"
 date = 2025-02-02
 [taxonomies]
-tags= ["gallery"]
+tags= ["Photography"]
 [extra]
 images= ["2.jpg"]
+in_search_index=true
 +++
 
 
 {{ image(src="2.jpg", alt="My second image") }}
 
-Hey this is my second image.
+A picture of me scuba-diving :D

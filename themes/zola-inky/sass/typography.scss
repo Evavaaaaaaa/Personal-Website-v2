@@ -35,7 +35,7 @@ h6 {
   font-size: 1rem;
 }
 
-blockquote {
+/*blockquote {
   margin-left: 1rem;
   font-style: italic;
   font-size: 1.4rem;
@@ -44,6 +44,22 @@ blockquote {
   border-color: var(--light-grey);
   color: var(--text-color-alt);
   padding-left: 20px;
+}*/
+
+blockquote {
+  background-color: #f8f9fa;
+  border-left: 4px solid var(--primary);  /* Use your primary color instead of gray */
+  padding: 16px 20px;  /* Slightly more padding */
+  margin: var(--spacing-lg) 0;  /* Use your spacing variables */
+  border-radius: 0 8px 8px 0;  /* Rounder right corners */
+  font-size: 1rem;  /* Slightly larger */
+  color:var(--text-color);  /* Darker text for better readability */
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);  /* Subtle shadow */
+}
+
+blockquote p {
+  margin: 0;
 }
 
 blockquote cite {

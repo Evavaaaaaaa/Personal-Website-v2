@@ -1,6 +1,6 @@
 +++
 title = "Search"
-images = ["R.jpg"]
+images = ["M.jpg"]
 template = "search.html"
 in_search_index = false
 +++

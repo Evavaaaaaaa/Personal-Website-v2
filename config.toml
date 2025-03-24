@@ -1,5 +1,5 @@
-title = "YiHua Chan"
-description = "An elegant and understated blog"
+title = "Eva Chan"
+description = "Welcome to my wonderland :D"
 theme = "zola-inky"
 
 # The URL the site will be built for
@@ -29,7 +29,7 @@ taxonomies = [{ name = "tags", lang = "en", rss = true }]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
-
+highlight_theme = "base16-ocean-light"
 
 [slugify]
 paths = "on"
@@ -39,7 +39,7 @@ anchors = "on"
 [extra]
 
 # Place your avatar in your /static folder
-avatar = "/R.jpg"
+avatar = "/S.jpg"
 
 # Your Google Analytics measurement id ("G-XXXXXXXXXX")
 # google_analytics_tag_id = "";
@@ -62,17 +62,17 @@ thumbnail_default_size = 256
 thumbnail_sizes = [128, 256]
 
 
-link_github_username = "jimmyff/zola-inky"
+ link_github_username = "Evavaaaaaaa"
 # link_twitter_username = ""
 # link_mastodon_url = ""
 # link_medium_username = ""
-# link_instagram_username = ""
+ link_instagram_username = "dreamdrawlive"
 
 menu_links = [
     { url = "$BASE_URL/", name = "About" },
     { url = "$BASE_URL/posts/", name = "Posts" },
     { url = "$BASE_URL/gallery/", name = "Gallery" },
     # { url = "$BASE_URL/tags/", name = "Tags" },
-    { url = "https://github.com/Evavaaaaaaa", name = "Github" },
+    # { url = "https://github.com/Evavaaaaaaa", name = "Github" },
     { url = "$BASE_URL/search/", name = "Search" },
 ]

@@ -2,8 +2,8 @@
 title = "HTML templates explained"
 description = "Notes on HTML basic structure, key rules and many more"
 date = 2025-03-16T21:59:00Z
-draft = false
-
+draft = true
+in_search_index=true
 [taxonomies]
 tags = ["Notes"]
 [extra]
@@ -156,6 +156,7 @@ toc = true
 <div class="user-profile">
 <div class="comment-section">
 
+---
 
 Key Rules:
 

@@ -1,13 +1,14 @@
 +++
-title = "Test3"
+title = "Ken-Ting"
 date = 2025-02-02
 [taxonomies]
-tags= ["gallery"]
+tags= ["Photography"]
 [extra]
 images= ["3.jpg"]
+in_search_index=true
 +++
 
 
 {{ image(src="3.jpg", alt="My third image") }}
 
-Hey this is my third image.
+A snapshot of Ken-Ting. 

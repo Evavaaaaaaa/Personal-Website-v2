@@ -2,8 +2,8 @@
 title = "Useful Links for Website"
 description = "Recommended"
 date = 2025-02-02T15:00:00Z
-draft = false
-
+draft = true
+in_search_index=true
 [taxonomies]
 tags = ["Notes"]
 [extra]

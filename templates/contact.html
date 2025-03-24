@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="contact-page">
+    <h3>Let's get in touch👋</h3>
+    <p>If you have questions, thoughts, or just want to say hi, drop your message below.</p>
+
+    <form name = "contact" method = "POST" data-netlify="true" class ="contact-form">
+        <input type="hidden"name="form-name"value="contact"/>
+        <div class = "form-group">
+            <label for="email">How can I reach you?</label>
+            <input type="email"name="email"id="email"required placeholder="youremail@example.com"/>
+        </div>
+       
+        <div class ="form-group">
+            <label for="message">What would you like to say?</label>
+            <textarea name="message" id="message" rows="5" required placeholder="Write your message here..."></textarea>
+        </div>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+{% endblock content %}
