@@ -25,7 +25,7 @@ You can also find me elsewhere:
 - 🎹 [YouTube](https://youtube.com/yourchannel) — where I share my piano playing  
 - 🎙 [Spotify](https://open.spotify.com/show/4FxDhsQzcix9HilXehBJVS?si=25b269c82dce4f06) — where I talk about random things with my brother
 
-> 💐Special Thanks: This website is powered by <a target="_blank" href="https://getzola.org/">Zola</a>. Theme: <a target="_blank" href="https://github.com/jimmyff/zola-inky"> Inky</a>. And inspired by my friend <a target="_blank" href="ianhsiao.xyz">Ian</a>.
+> 💐Special Thanks: This website is powered by <a target="_blank" href="https://getzola.org/">Zola</a>. Theme: <a target="_blank" href="https://github.com/jimmyff/zola-inky"> Inky</a>. And inspired by my friend <a target="_blank" href="https://ianhsiao.xyz">Ian</a>.
 
 
 

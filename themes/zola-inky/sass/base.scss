@@ -104,13 +104,6 @@ textarea {
 
 
 @media (max-width: 900px) {
-  html {
-    font-size: 14px; // 👈 shrink the root font size for mobile
-  }
-
-  p, li {
-    font-size: 0.9rem; // Optional: fine-tune paragraph/list text
-  }
 
   body {
     padding: 0 2rem;
@@ -136,14 +129,6 @@ textarea {
 @media (max-width: 600px) {
   body {
     padding: 0 1rem;
-  }
-
-  html {
-    font-size: 14px; // 👈 shrink the root font size for mobile
-  }
-
-  p, li {
-    font-size: 0.9rem; // Optional: fine-tune paragraph/list text
   }
 
   h1 {
