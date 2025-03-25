@@ -31,6 +31,7 @@ taxonomies = [{ name = "tags", lang = "en", rss = true }]
 highlight_code = true
 highlight_theme = "base16-ocean-light"
 
+
 [slugify]
 paths = "on"
 taxonomies = "on"

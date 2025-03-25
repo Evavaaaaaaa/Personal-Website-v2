@@ -17,28 +17,60 @@
 
   {{ hooks::post_above_content(page=page) }}   <!-- Hook for content above post -->
 
+  
   <!-- Add this container around both content and sidebar -->
   <div class="post-container">
-    <!-- Main content -->
+        <!-- Main content -->
     <article class="post-content">
+        {# Mobile-only inline TOC inside article #}
+        {% if page.toc %}
+        <div class="toc-mobile">
+          <nav class="toc">
+            <h2>📚 Table of Content </h2>
+            <ul>
+              {% for h1 in page.toc %}
+              <li>
+                <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+                {% if h1.children %}
+                <ul>
+                  {% for h2 in h1.children %}
+                  <li><a href="{{ h2.permalink | safe }}">{{ h2.title }}</a></li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+          </nav>          
+        </div>
+        {% endif %}
         {{ page.content | safe }}
     </article>
-
-    <!-- Sidebar -->
-    <aside class="post-sidebar">
-        <div class="tags-list">
-            <h3>Sort by Tag</h3>
-            {% set all_tags = get_taxonomy(kind="tags") %}
-            
-            {% for tag in all_tags.items %}
-                <a href="{{ tag.permalink }}" class="tag-item">
-                    {{ tag.name }} 
-                    <span class="tag-count">({{ tag.pages | length }})</span>
-                </a>
-            {% endfor %}
-        </div>
+        <!--Toc-->
+    {# Desktop-only sticky sidebar TOC #}
+    {% if page.toc %}
+    <aside class="post-toc toc-desktop">
+      <nav class="toc">
+        <h2>📚 Table of Content </h2>
+        <ul>
+          {% for h1 in page.toc %}
+          <li>
+            <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+            {% if h1.children %}
+            <ul>
+              {% for h2 in h1.children %}
+              <li><a href="{{ h2.permalink | safe }}">{{ h2.title }}</a></li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>      
     </aside>
+    {% endif %}
   </div>
+
 
   {{ hooks::post_below_content(page=page) }}   <!-- Hook for content below post -->
 
@@ -69,4 +101,16 @@
   
   {{ hooks::post_below_tags(page=page) }}   <!-- Hook for content below tags -->
 </section>
+  <!-- Sidebar -->
+  <div class="tags-list">
+    <h2>Sort by Tag</h2>
+    {% set all_tags = get_taxonomy(kind="tags") %}
+     
+    {% for tag in all_tags.items %}
+        <a href="{{ tag.permalink }}" class="tag-item">
+            {{ tag.name }} 
+            <span class="tag-count">({{ tag.pages | length }})</span>
+        </a>
+    {% endfor %}
+</div>
 {% endblock content %}     <!-- Ends the content block -->
