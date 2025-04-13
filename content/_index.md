@@ -3,6 +3,7 @@ title = "Eva Chan"
 template = "index.html"
 in_search_index = true
 +++
+Find random quotes [here](/quotes)
 
 Hi, I’m Eva — curious about how people think, how systems work, and how stories are told. 
 <img src="M.jpg" alt="Self-protrait" style="max-width: 100%; width: 300px;">

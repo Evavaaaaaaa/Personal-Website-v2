@@ -1,0 +1,32 @@
+name: Daily Build
+on:
+  schedule:
+    # 每天凌晨 00:00 UTC (台灣時間早上 8:00) 運行
+    - cron: '0 0 * * *'
+  # 也允許手動觸發
+  workflow_dispatch:
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 檢出代碼
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 安裝 Zola
+      - name: Install Zola
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.17.2
+
+      # 構建網站
+      - name: Build site
+        run: zola build
+
+      # 部署到 GitHub Pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public 

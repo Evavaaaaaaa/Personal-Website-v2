@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quotes</title>
+    <link rel="stylesheet" href="{{ get_url(path='quotes.css',trailing_slash=false)|safe}}">
+    <link rel="stylesheet" href="{{ get_url(path='base.css',trailing_slash=false)|safe}}">
+</head>
+<body>
+    <!-- 添加導航 -->
+    <nav class="nav-back">
+        <a href="/" class="nav-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            Back to Home
+        </a>
+    </nav>
+
+    <div class="space-quote-container">
+        <h1 class="space-title">Get your random quote here!</h1>
+        
+        <div class="quote-card">
+            <div class="quote-marks left">"</div>
+            <quote id="quote-display"></quote>
+            <div class="quote-marks right">"</div>
+        </div>
+
+        <div class="button-container">
+            <button id="refresh-quote" class="refresh-button">
+                Refresh
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // 確保數據正確加載
+        {% set data = load_data(path="data/quotes.yml") %}
+        const quotes = [
+            {% for quote in data.quotes %}
+            {
+                text: "{{ quote.text | safe | replace(from='"', to='\\"') }}"
+                {% if quote.source %}, source: "{{ quote.source | safe | replace(from='"', to='\\"') }}"{% endif %}
+            }{% if not loop.last %},{% endif %}
+            {% endfor %}
+        ];
+
+        function displayRandomQuote() {
+            const quoteElement = document.getElementById('quote-display');
+            if (quoteElement && quotes.length > 0) {
+                const randomIndex = Math.floor(Math.random() * quotes.length);
+                const quote = quotes[randomIndex];
+                quoteElement.textContent = quote.text;
+                console.log('Displaying quote:', quote.text); // 添加調試信息
+            } else {
+                console.error('Quote element not found or quotes array is empty');
+            }
+        }
+
+        // 頁面加載完成後顯示引言
+        document.addEventListener('DOMContentLoaded', function() {
+            displayRandomQuote();
+            // 添加點擊事件監聽器
+            document.getElementById('refresh-quote').addEventListener('click', displayRandomQuote);
+        });
+    </script>
+</body>
+</html> 

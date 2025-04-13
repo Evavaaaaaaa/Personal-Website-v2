@@ -9,6 +9,7 @@ tags = ["changelog"]
 [extra]
 keywords = "网站，网站搭建"
 toc = true
+path = "changelog0326"
 +++
 
 When writing book notes on my blog, I wanted every post to include a **Table of Contents (TOC)** that:
