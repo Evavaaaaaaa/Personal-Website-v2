@@ -6,7 +6,7 @@ draft=false
 in_search_index=true
 render = true
 ["taxonomies"]
-tags = ["WhatIRead","Phsycology"]
+tags = ["WhatIRead","Psychology"]
 ["extra"]
 keywords = "書籍摘錄, 我們内心的衝突, our inner conflicts"
 toc=true
