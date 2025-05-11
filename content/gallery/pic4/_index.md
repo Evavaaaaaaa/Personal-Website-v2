@@ -8,3 +8,5 @@ in_search_index=true
 
 
 {{ image(src="pic4.png", alt="I like how determined the girl turned out to be. There’s a quiet fire in her eyes.") }}
+
+I like how determined the girl turned out to be. There’s a quiet fire in her eyes.
