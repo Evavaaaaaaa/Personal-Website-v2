@@ -72,14 +72,9 @@ thumbnail_sizes = [128, 256]
 menu_links = [
     { url = "$BASE_URL/", name = "About" },
     { url = "$BASE_URL/posts/", name = "Posts" },
+    { url = "$BASE_URL/changelog/", name = "Changelog" },
     { url = "$BASE_URL/gallery/", name = "Gallery" },
     # { url = "$BASE_URL/tags/", name = "Tags" },
     # { url = "https://github.com/Evavaaaaaaa", name = "Github" },
-    { url = "$BASE_URL/search/", name = "Search" },
+    # { url = "$BASE_URL/search/", name = "Search" },
 ]
-
-# Add RSS feed template
-feed_filename = "quotes.xml"
-
-# Enable RSS template
-template_extensions = ["xml"]
