@@ -1,6 +1,6 @@
 +++
-title = "Behavioural Therapy: ACT and CBT"
-description = "Caputring my train of thoughts"
+title = "The toolbox when facing cognitive diffusion"
+description = "Behavioural Therapy: ACT and CBT"
 date = 2025-04-19T20:10:00+08:00
 draft = false
 

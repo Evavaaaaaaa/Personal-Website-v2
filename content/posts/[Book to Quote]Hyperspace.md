@@ -8,6 +8,10 @@ in_search_index=true
 tags=["WhatIRead","Physics"]
 +++
 
+Hey! I know this is a SUPER LONG page, so, I've created a special quote generator that would randomly pick one of the annotations I made and give it to you as a gift. Try it out here (desktop version is preferred): [Generate your quote of the day!](/quotes)
+
+---
+
 Book : Hyperspace
 
 Author: Michio Kaku
