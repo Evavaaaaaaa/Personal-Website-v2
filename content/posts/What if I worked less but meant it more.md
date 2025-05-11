@@ -31,17 +31,6 @@ That’s where digital products come in.
 One piece of work, sold many times.  
 Sounds simple. Still figuring it out.
 
-I don't have a product yet. But the seeds are there. Maybe it’s something related to my study abroad journey. Maybe templates for college applications. Or even just a thoughtful guide on how to ask for a coffee chat that’s not awkward. Something small but useful. Something that feels like a warm hand on the shoulder for someone a few steps behind me.
-
-The truth is, I don’t want to sell just to sell. I want to create with care. I want to make something that feels honest, light, and kind. Not another productivity hack, but a gentle nudge forward.
-
-And if I ever feel like I’m forcing it—if the idea doesn’t spark joy or curiosity—then maybe it's not worth doing at all. Not everything has to be monetized. In fact, forcing myself to push through uninspired work usually leads to more procrastination, more guilt, and ironically… a lower hourly rate.
-
-So maybe the real answer to "how do I raise my hourly rate?" is:
-
-1. **Work well, not more.**  
-2. **Detach completely when it's not work time.**  
-3. **Create slowly, with heart. Sell it gently.**  
-4. **If it doesn’t feel right, pause. Don’t push.**
+I don't have a product yet. But the seeds are there. Maybe it’s something related to my study abroad journey. Maybe templates for college applications. Or even just a thoughtful guide on how to ask for a coffee chat that’s not awkward. Something small but useful. 
 
 Time is finite, but meaning isn’t. And if I can align my work with what feels meaningful—even if it’s small—I think that’s a win.
