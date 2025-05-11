@@ -1,8 +1,6 @@
 +++
 title = "Ken-Ting"
 date = 2025-02-02
-[taxonomies]
-tags= ["Photography"]
 [extra]
 images= ["3.jpg"]
 in_search_index=true

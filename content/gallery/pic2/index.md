@@ -1,8 +1,6 @@
 +++
 title = "Scuba-diving"
 date = 2025-02-02
-[taxonomies]
-tags= ["Photography"]
 [extra]
 images= ["2.jpg"]
 in_search_index=true
