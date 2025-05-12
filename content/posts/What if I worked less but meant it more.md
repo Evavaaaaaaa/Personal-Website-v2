@@ -5,7 +5,7 @@ date = 2025-03-25T11:10:00+08:00
 draft = false
 
 [taxonomies]
-tags = ["WorkThoughts"]
+tags = ["Thoughts"]
 [extra]
 keywords = "第一份工作，應届生，graduate"
 toc = true
