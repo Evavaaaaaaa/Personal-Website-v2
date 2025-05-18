@@ -5,7 +5,7 @@ date = 2024-11-29T15:00:00Z
 draft = false
 
 [taxonomies]
-tags = ["Thoughts"]
+tags = ["Thoughts","Sociology"]
 [extra]
 keywords = "thoughts, sociology"
 toc = true
