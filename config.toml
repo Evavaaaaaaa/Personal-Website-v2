@@ -72,6 +72,7 @@ thumbnail_sizes = [128, 256]
 menu_links = [
     { url = "$BASE_URL/", name = "About" },
     { url = "$BASE_URL/posts/", name = "Posts" },
+    { url = "$BASE_URL/books/", name = "Books" },
     { url = "$BASE_URL/changelog/", name = "Changelog" },
     { url = "$BASE_URL/gallery/", name = "Gallery" },
     # { url = "$BASE_URL/tags/", name = "Tags" },
