@@ -3,7 +3,7 @@ title="Thread of Thoughts"
 description="Short essays that update regularly"
 date=2025-05-31T14:56:00+08:00
 draft=false
-[Taxonomies]
+[taxonomies]
 tags=["Thoughts"]
 toc=true
 +++
